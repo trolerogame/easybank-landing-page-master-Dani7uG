@@ -1,10 +1,15 @@
-import React from 'react'
-
+import React,{useState} from 'react'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import {GlobalStyles} from './styles/styledGlobal'
 const App = () => {
+    const [close,setClose] = useState(false)
     return (
-        <div>
-            hola mundo
-        </div>
+        <>
+            <GlobalStyles  close={close} />
+            <Header close={close} setClose={setClose}/>
+            <Footer/>
+        </>
     )
 }
 
