@@ -2,12 +2,12 @@ import React from 'react'
 import { HeaderContain,Hamburger,HeaderItems,InviteButton } from '../styles/stylesHeader'
 import HamburgerImg from '../../images/icon-hamburger.svg'
 import Close from '../../images/icon-close.svg'
-import logo from '../../images/logo.svg'
+import Logo from './Logo'
 const Header = ({close,setClose}) => {
     const headerLinks = ['Home', 'About', 'Contact','Blog','Careers']
     return (
         <HeaderContain>
-            <img src={logo} alt="" />
+            <Logo color='#2D314D'/>
             <HeaderItems close={close}>
                 {headerLinks.map(item => 
                     <p key={item}>{item}</p>

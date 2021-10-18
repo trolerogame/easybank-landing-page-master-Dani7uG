@@ -9,5 +9,7 @@ export const GlobalStyles = createGlobalStyle`
         background-color:${props => props.close ? 'rgba(0,0,0,.5)' : '#fff'};
         font-family: 'Public Sans', sans-serif;
         transition: all .15s linear;
+        position: relative;
+        z-index: 10000;
     }
 `

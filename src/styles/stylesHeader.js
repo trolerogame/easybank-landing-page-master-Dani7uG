@@ -26,6 +26,7 @@ export const Hamburger = styled.button`
     }
 `
 export const InviteButton = styled.button`
+    
     font-weight: 700;
     text-align: center;
     border:none;
@@ -36,25 +37,25 @@ export const InviteButton = styled.button`
     height: 40px;
     color:#fff;
     cursor:pointer;
-    display:none;
+    display:${props => props.response ? 'block' : 'none'};
     @media (min-width:768px){
         display: block;
     }
 `
 export const HeaderItems = styled.div`
-    display:${props => props.close ? 'block' : 'none'};
     opacity:${props => props.close ? 1 : 0};
+    display:${props => props.close ? 'flex':'none'};
+    flex-direction:column;
+    align-items:center;
     position:absolute;
     bottom:-290px;
     width: calc(100% - 40px);
     background:#fff;
     padding:5px 0;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
     border-radius: 5px;
     transition: all .15s linear;
     @media (min-width: 768px) {
+        display:flex;
         opacity: 1;
         position: static;
         flex-direction: row;

@@ -7,8 +7,14 @@ export const FooterContain = styled.footer`
     flex-direction:column;
     align-items:center;
     padding:30px 0;
+
     p{
         color:hsl(233, 8%, 62%)
+    }
+    @media (min-width:768px){
+        flex-direction: row;
+        justify-content:space-around;
+        align-items:center;
     }
 `
 
@@ -21,6 +27,13 @@ export const ItemsFooter = styled.div`
         margin:7px 0;
         text-decoration:none;
         cursor:pointer;
+        transition: all 0.1s linear;
+    }
+    a:hover{
+        color:hsl(136, 65%, 51%);
+    }
+    @media (min-width:768px){
+        flex-direction: row;
     }
 `
 export const ListNetworks = styled.div`
@@ -31,8 +44,19 @@ export const ListNetworks = styled.div`
         outline:none;
         background:none;
         cursor:pointer;
+        transition:all 0.1 linear;
     }
-    button:hover{
-        color:hsl(136, 65%, 51%)
+    button:hover >svg path{
+        fill:hsl(136, 65%, 51%);
+    }
+`
+
+export const Align = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    @media (min-width: 768px) {
+        align-items:${props => props.item ? 'start': 'center'};
+        margin:${props => props.item ? '0 60px' : '15px'};
     }
 `
