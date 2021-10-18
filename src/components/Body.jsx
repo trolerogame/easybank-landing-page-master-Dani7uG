@@ -24,7 +24,7 @@ const Body = () => {
                 <ContaintTitle>
                     <Title>Next generation digital banking</Title>
                     <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>
-                    <InviteButton response>Request Invite</InviteButton>
+                    <InviteButton>Request Invite</InviteButton>
                 </ContaintTitle>
             </ContaintTitleImg>
             <ChooseEasybank>
