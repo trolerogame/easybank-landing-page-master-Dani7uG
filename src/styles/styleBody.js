@@ -86,6 +86,11 @@ export const Choose = styled.div`
     margin: 60px 20px;
     h3{
         font-weight: 400;
+        cursor:pointer;
+        transition: all .1s linear;
+    }
+    h3:hover{
+        color:hsl(136, 65%, 51%);
     }
     @media (min-width:768px){
         align-items:start;
