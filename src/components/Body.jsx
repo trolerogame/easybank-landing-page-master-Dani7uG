@@ -40,9 +40,7 @@ const Body = () => {
                     )}
                 </ChooseContain>
             </ChooseEasybank>
-            <div>
                 <SemiTitle> Latest Articles</SemiTitle>
-            </div>
             <Articles>
                 {article.map(({id,author,img,text,title}) => 
                     <Article key={id}>
