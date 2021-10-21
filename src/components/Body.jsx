@@ -1,5 +1,5 @@
 import React from 'react'
-import imagesMobiles from '../../images/image-mockups.png'
+import imagesMobiles from '../../public/image-mockups.png'
 
 import { 
     ChooseContain,

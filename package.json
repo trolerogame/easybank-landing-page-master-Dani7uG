@@ -1,13 +1,14 @@
 {
   "name": "easybank-landing-page-master",
   "version": "0.0.0",
-  "homepage":"",
+  "homepage": "",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^3.2.3",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "styled-components": "^5.3.1"

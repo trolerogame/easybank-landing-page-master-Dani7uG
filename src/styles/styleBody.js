@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import ImageDesktop from '../../images/bg-intro-desktop.svg'
-import ImageMobile from '../../images/bg-intro-mobile.svg'
+import ImageDesktop from '../../public/bg-intro-desktop.svg'
+import ImageMobile from '../../public/bg-intro-mobile.svg'
 export const ContainImgs = styled.div`
     position: relative;
     background-image: url(${ImageMobile});
