@@ -1,11 +1,12 @@
 {
   "name": "easybank-landing-page-master",
   "version": "0.0.0",
-  "homepage": "",
+  "homepage": "https://trolerogame.github.io/easybank-landing-page-master-Dani7uG/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "gh-pages": "^3.2.3",
