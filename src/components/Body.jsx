@@ -1,5 +1,6 @@
 import React from 'react'
 import imagesMobiles from '../../images/image-mockups.png'
+
 import { 
     ChooseContain,
     ImagesMobiles,
@@ -11,7 +12,8 @@ import {
     Choose,
     Articles,
     Article,
-    ContaintTitleImg
+    ContaintTitleImg,
+    ContainImgs
     } from '../styles/styleBody'
 import { InviteButton } from '../styles/stylesHeader'
 import chooseEasybank from '../chooseEasybank.json'
@@ -20,7 +22,9 @@ const Body = () => {
     return (
         <ContainBody>
             <ContaintTitleImg>
-                <ImagesMobiles src={imagesMobiles} alt="" />
+                <ContainImgs>
+                    <ImagesMobiles src={imagesMobiles} alt="" /> 
+                </ContainImgs>
                 <ContaintTitle>
                     <Title>Next generation digital banking</Title>
                     <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.</p>

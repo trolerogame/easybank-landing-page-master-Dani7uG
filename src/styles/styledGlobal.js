@@ -1,4 +1,4 @@
-import {createGlobalStyle} from 'styled-components';
+import styled,{createGlobalStyle} from 'styled-components';
 
 
 export const GlobalStyles = createGlobalStyle`
@@ -6,10 +6,17 @@ export const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        background-color:${props => props.close ? 'rgba(0,0,0,.5)' : '#fff'};
+        background-color:hsl(0, 0%, 99%);
         font-family: 'Public Sans', sans-serif;
         transition: all .15s linear;
         position: relative;
-        z-index: 10000;
+        z-index: -1;
     }
+`
+
+export const Opacity = styled.div`
+    display: ${props => props.close ? 'block' : 'none'};
+    position: relative;
+    z-index:1000;
+    background-color:rgba(0,0,0,.5);
 `

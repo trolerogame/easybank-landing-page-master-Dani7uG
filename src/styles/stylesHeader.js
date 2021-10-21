@@ -40,6 +40,7 @@ export const InviteButton = styled.button`
     display:${props => props.response ? 'block' : 'none'};
     @media (min-width:768px){
         display: block;
+        margin:20px;
     }
 `
 export const HeaderItems = styled.div`

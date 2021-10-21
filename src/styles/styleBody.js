@@ -1,9 +1,28 @@
 import styled from 'styled-components'
-
+import ImageDesktop from '../../images/bg-intro-desktop.svg'
+import ImageMobile from '../../images/bg-intro-mobile.svg'
+export const ContainImgs = styled.div`
+    position: relative;
+    background-image: url(${ImageMobile});
+    background-size:cover;
+    height: 460px;
+    z-index:-2;
+    @media (min-width:768px){
+        background-image: url(${ImageDesktop});
+        width:800px;
+        left:-50px;
+    }
+`
 
 export const ImagesMobiles = styled.img`
     width:100%;
     object-fit:cover;
+    position: absolute;
+    top:-80px;
+    z-index:-1;
+    @media (min-width:768px){
+        width:800px;
+    }
 `
 
 export const ContainBody = styled.main`
@@ -24,6 +43,12 @@ export const ContainBody = styled.main`
         h2,p{
             text-align:start;
             margin:0 100px;
+        }
+        h1{
+            font-size: 50px;
+            text-align:start;
+            margin:20px 100px;
+
         }
     }
 `
